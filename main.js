@@ -21,7 +21,7 @@ scene.add(directionalLight);
 
 // verticies = points in 3D space that define each corner of a polygon. 
 // generate the cube using vertex and fragment shaders.
-const material = new THREE.MeshStandardMaterial({ color: 0xff5733  }); // set the color of the cube and material that covers the geoemtry. creates a fragment shader that assigns the same color to every pixel. 
+const material = new THREE.MeshStandardMaterial({ color: 0xff5733  }); // set the color of the cube and material that covers the geoemtry. creates a fragment shader that assigns a color to every pixel and using physically based rendering.
 const geometry = new THREE.BoxGeometry(); // define geometry of the cube. 1 x 1 x 1 by default. this calculates the necessary verticies to draw a cube.
 const cube = new THREE.Mesh(geometry, material); // combine the geometry and material to create the mesh. this is effectively compiling a vertex shader in openGL
 scene.add(cube);
